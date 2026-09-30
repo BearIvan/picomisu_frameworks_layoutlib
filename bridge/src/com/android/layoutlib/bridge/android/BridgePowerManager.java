@@ -205,4 +205,10 @@ public class BridgePowerManager implements IPowerManager {
     public boolean forceSuspend() {
         return false;
     }
+
+    @Override
+    public void setSensorControlScreenFeatureState(boolean opened, IBinder appToken,
+            String packageName) {
+        // pass for now.
+    }
 }
